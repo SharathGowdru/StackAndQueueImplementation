@@ -1,7 +1,6 @@
-﻿using StackUsing_LinkedList;
-using System;
+﻿using System;
 
-namespace StackUsingLinkedList
+namespace StackAndQueueImplementation
 {
     class Program
     {
@@ -11,6 +10,8 @@ namespace StackUsingLinkedList
             linkedListQueue.Enqueue(56);
             linkedListQueue.Enqueue(30);
             linkedListQueue.Enqueue(70);
+            linkedListQueue.Dequeue();
+            Console.WriteLine("After Deleting one element from the queue is  : ");
             linkedListQueue.Display();
         }
     }

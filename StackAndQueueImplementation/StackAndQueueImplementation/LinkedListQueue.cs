@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace StackUsing_LinkedList
+namespace StackAndQueueImplementation
 {
     class LinkedListQueue
     {
@@ -39,5 +39,14 @@ namespace StackUsing_LinkedList
                 temp = temp.next;
             }
         }
+        
+        internal Node Dequeue()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+        }
+
     }
 }
